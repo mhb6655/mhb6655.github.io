@@ -20,7 +20,7 @@ a{
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: scroll;
+    overflow: hidden;
 }
 .navbar{
     position: static;
@@ -67,6 +67,11 @@ a{
     display: flexbox;
     border-radius: 15px;
     z-index: 1;
+}
+.tampil{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
 }
 .tampil .banner img{
     width: 100%;
