@@ -20,7 +20,7 @@ a{
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
 }
 .navbar{
     position: static;
@@ -60,4 +60,24 @@ a{
     font-weight: 700; 
     color: green; 
     font-size: 30px;
+}
+.tampil .banner{
+    width: 100%;
+    margin:5px auto;
+    display: flexbox;
+    border-radius: 15px;
+    z-index: 1;
+}
+.tampil .banner img{
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    position: relative;
+    background-attachment: fixed;
+    animation: m;
+    animation-duration: 4s;
+}
+@keyframes m{
+    from {opacity: 0;}
+    to{opacity: 1;}
 }
