@@ -74,7 +74,9 @@ a{
     height: 100vh;
     overflow-y: scroll;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
 }
 .tampil .banner img{
     width: 100%;
@@ -147,4 +149,108 @@ a{
 }
 .tampil #banner .len .lens-active{
     transform: scale(1.2);
+}
+.content-kat{
+    display: flex;
+    width: 100%;
+}
+.content-kat .katagori{
+    position: relative;
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+}
+.content-kat .katagori .pilih{
+    position: relative;
+    margin: 7px 0 0 0;
+    float: bottom;
+    width: -2;
+    height: 145px;
+    background-color: rebeccapurple;
+
+}
+.content-kat .tagihan{
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+.content-kat .tagihan .list{
+    display: flex;
+}
+.content-kat .tagihan .list h3{
+    margin: 10px 0 0 8px;
+    color: blue;
+}
+.content-kat .tagihan .table{
+    position: relative;
+    margin: 7px 0 0 0;
+    float: bottom;
+    width: -2;
+    height: 150px;
+    border: 1px solid rgba(0,0,0,0.30);
+    border-radius: 12px;
+}
+.tagihan .table #leng{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: -2;
+}
+.tagihan .table #leng:before{
+    position: absolute;
+    content:" ";
+    padding: 0.3px;
+    width: 100%;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.30);
+
+}
+.tagihan .table #leng .leng{
+    width: 100%;
+    display: flex;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+.table #leng i{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: -2;
+}
+.table #leng i:hover{
+    color: rgba(0,0,0,0.30);
+}
+.table #leng i:after{
+    content: "";
+    position: absolute;
+    padding: 0.3px;
+    height: 100%;
+    left: 0;
+    background-color: rgba(0,0,0,0.30);
+
+}
+.tagihan .table #leng .leng h4{
+    position: relative;
+    cursor: pointer;
+    margin:  0 8px 0 8px;
+    text-align: center;
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+}
+.tagihan .table #leng .leng .h-active:before{
+    content: " ";
+    position: absolute;
+    padding: 2px;
+    width: 100%;
+    bottom: 0;
+    background-color: green;
+    border-radius: 15px;
+
+}
+.tagihan .table #leng .leng h4:hover{
+    color: green;
 }
