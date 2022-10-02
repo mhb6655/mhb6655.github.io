@@ -18,7 +18,7 @@ fetch('tagihan.json')
     })
 })
 .catch((err) => {
-    
+    console.log(err);
 });
 
 
